@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { links } from "../navBarData";
+import "./navbar.css";
 
 function Navbar() {
-  /* const [show, setShow] = useState(); */
+  const [show, setShow] = useState();
 
   return (
     <main>
       <header className="header">
-        <div>
+        <div className="headertoggle" onClick={() => setShow(show)}>
+          {" "}
+          {/* para mostrar e esconder a side bar  onclick*/}
           <i class="fas fa-bars"></i>
           <i class="fa-solid fa-xmark"></i>
           <h1 className="title">Flexa Barber</h1>
