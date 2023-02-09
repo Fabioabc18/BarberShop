@@ -1,12 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import About from "./components/About";
-import Gallery from "./components/Gallery";
 import Home from "./components/Home";
-import Location from "./components/Location";
-import Navbar from "./components/Navbar";
 import Pricelist from "./components/Pricelist";
+import Gallery from "./components/Gallery";
 import Scheduling from "./components/Scheduling";
+import Location from "./components/Location";
+import About from "./components/About";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
