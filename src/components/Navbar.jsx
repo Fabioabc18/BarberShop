@@ -4,22 +4,21 @@ import { links } from "../navBarData";
 import "./navbar.css";
 
 function Navbar() {
-  const [show, setShow] = useState();
+  const [show, setShow] = useState(false);
 
   return (
-    <main>
-      <header className="header">
-        <div className="headertoggle" onClick={() => setShow(show)}>
+    <main className={show ? "hamburger" : ""}>
+      <header className={`header ${show ? "hamburguer" : ""}`}>
+        <div className="header-toggle" onClick={() => setShow(!show)}>
           {" "}
-          {/* para mostrar e esconder a side bar  onclick*/}
-          <i class="fas fa-bars"></i>
-          <i class="fa-solid fa-xmark"></i>
+          {/* p /mostrar a side bar */}
+          <i className={`fas fa-bars ${show ? "fa-solid fa-xmark" : ""}`}></i>
           <h1 className="title">Flexa Barber</h1>
           <p>More then a barber</p>
         </div>
       </header>
-      <aside>
-        <nav className="navbar">
+      <aside className={`sidebar ${show ? "show" : ""}`}>
+        <nav className="nav">
           <ul>
             {links.map(({ icon, path, id, name }) => (
               <li key={id}>
