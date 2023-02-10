@@ -11,7 +11,9 @@ const Navbar = () => {
       <header className={`header ${show ? "hamburguer" : ""}`}>
         <div className="header-toggle" onClick={() => setShow(!show)}>
           <i className={`fas fa-bars ${show ? "fa-solid fa-xmark" : ""}`}></i>
-          <h1 className="title">Flexa Barber</h1>
+        </div>
+        <div className="title">
+          <h1>Flexa Barber</h1>
           <p>More then a barber</p>
         </div>
       </header>
