@@ -1,0 +1,51 @@
+[
+  {
+    "services_id": 1,
+    "service": "Corte de Cabelo",
+    "cutz": [
+      { "cut_id": 1, "name": " Simples", "price": 8 },
+
+      { "cut_id": 2, "name": "Degradê/Fade", "price": 10 },
+
+      { "cut_id": 3, "name": " Corte + desenho", "price": 8 },
+
+      { "cut_id": 4, "name": " Corte + barba", "price": 12 },
+
+      { "cut_id": 5, "name": " Corte c/ tesoura + Fade", "price": 15 },
+
+      { "cut_id": 6, "name": " Corte + pintar", "price": 20 },
+
+      { "cut_id": 7, "name": " Corte + platinar", "price": 25 },
+
+      { "cut_id": 8, "name": " Corte + tranças", "price": 35 }
+    ]
+  },
+
+  {
+    "services_id": 2,
+    "service": "Barba",
+    "cutz": [
+      { "cut_id": 9, "name": " Simples", "price": 5 },
+
+      { "cut_id": 10, "name": " Degradê/Fade", "price": 8 },
+
+      { "cut_id": 11, "name": " Corte + Pintar", "price": 10 }
+    ]
+  },
+
+  {
+    "services_id": 12,
+    "service": "Kidz",
+    "cutz": [{ "cut_id": 13, "name": " Corte", "price": 7.5 }]
+  },
+
+  {
+    "services_id": 14,
+    "service": "Flexa Premium",
+    "cutz": [
+      { "cut_id": 15, "name": " Flexa Expresso", "price": 45 },
+
+      { "cut_id": 16, "name": " Flexa Home", "price": 70 }
+    ]
+  }
+]

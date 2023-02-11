@@ -8,11 +8,12 @@
 
 .welcome-video {
   width: 30%;
-  margin-left: 15%;
+  margin-left: 9%;
 }
 
 .welcome-text {
   width: 50%;
+  align-items: center;
   text-align: center;
   margin-top: 3rem;
   color: rgb(240, 255, 255);

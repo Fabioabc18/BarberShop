@@ -7,7 +7,6 @@ function Home() {
       <video className="welcome-video" controls autoplay>
         <source src="/videos/c4.mp4" type="video/mp4" />
       </video>
-      <p>More than a barber</p>
 
       <div className="welcome-text">
         <h1>Bem-Vindo à Flexa Barber</h1>
