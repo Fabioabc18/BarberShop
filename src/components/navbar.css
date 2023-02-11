@@ -1,11 +1,6 @@
 #root {
   --header-height: 3rem;
   --nav-width: 4.25rem;
-
-  --sidebar-color: #3e479c;
-  --icon-color: #0c0c0c;
-  --main-color: #9c603e;
-  --active-color: #ec5809;
 }
 
 main {
@@ -17,11 +12,11 @@ main {
 }
 
 .header {
-  position: fixed;
   top: 0;
   left: 0;
   height: var(--header-height);
   width: 100%;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,27 +32,27 @@ main {
   justify-content: space-between;
   font-size: 1.25rem;
   cursor: pointer;
-  color: #ec5809;
+  color: rgb(236, 88, 9);
 }
 
 .navbar {
-  position: fixed;
   top: 2;
   left: -30%;
   height: 100vh;
   width: var(--nav-width);
-  background-color: rgba(156, 96, 62, 0.663);
   padding-top: 1rem;
+  position: fixed;
+  background-color: rgba(156, 96, 62, 0.663);
   transition: 0.5s;
 }
 
 .nav {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  height: 100%;
-  color: var(--sidebar-color);
+  color: rgb(62, 71, 156);
 }
 
 .nav-icon,
@@ -68,41 +63,33 @@ main {
 
 .nav-path {
   display: grid;
+  position: relative;
   grid-template-columns: max-content max-content;
   column-gap: 2rem;
   padding: 3rem 0 1rem 1.5rem;
-  position: relative;
   transition: 0.3s;
   margin-bottom: 1.5rem;
 }
 
-.hover:hover {
-  color: red;
-}
-
-.nav-path:hover {
-  color: #ecaf09;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
+.nav-path:hover,
 .nav-icon:hover {
-  color: #ecaf09;
+  color: rgb(236, 175, 9);
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .active {
-  color: #ecaf09;
+  color: rgb(236, 175, 9);
   background-color: rgba(0, 0, 0, 0.4);
 }
 
 .active::before {
-  content: "";
-  position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   height: 3rem;
   width: 0.18rem;
-  background-color: var(--active-color);
+  position: absolute;
+  content: "";
+  background-color: rgb(236, 88, 9);
   transition: 0.5s;
 }
 
