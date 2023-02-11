@@ -118,10 +118,10 @@ main {
   }
 
   .show {
-    width: calc(var(--header-height) + 156px);
+    width: calc(var(--header-height) + 9.75rem);
   }
 
   .hamburguer {
-    padding-left: calc(var(--nav-width) + 188px);
+    padding-left: calc(var(--nav-width) + 11.75rem);
   }
 }

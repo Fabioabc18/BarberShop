@@ -14,7 +14,7 @@ const Navbar = () => {
         </div>
         <div className="title">
           <h1>Flexa Barber</h1>
-          <p>More then a barber</p>
+          <p>More than a barber</p>
         </div>
       </header>
 
