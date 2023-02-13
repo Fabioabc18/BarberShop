@@ -11,30 +11,35 @@ function Pricelist(props) {
   }, []);
 
   return (
-    <main id="services">
+    <main className="pricelist">
       <div>
         <h1> Flexa Barber </h1>
-        <img src="/images.PL-barber-shop.png" alt="" />
+        <img src="/images/001-barber-shop.png" alt="simbolo de barbearia" />
         <hr />
         {cutz.map(service => (
           <section key={service.services_id}>
             {" "}
             {/* prende a a key ID */}
-            <h2>{service.service}</h2> {/*  ira dizer nome do serviço */}
-            <img src={service.icon} alt="" />
-            <hr />
-            <ul>
+            <h2 className="main_service">{service.service}</h2>{" "}
+            {/*  ira dizer nome do serviço */}
+            <img className="icons" src={service.icon} alt={service.alt} />
+            <ul className="cutz">
               {service.cutz.map(corte => (
                 <div key={corte.cut_id}>
-                  <li> {corte.name} </li>
-                  <li> {corte.price}€</li>
+                  <li className="service"> {corte.name} </li>
+                  <li className="price"> {corte.price}€</li>
                 </div>
               ))}
             </ul>
             <hr />
-            <footer></footer>
           </section>
         ))}
+        <footer>
+          <h3>*Flexa Expresso</h3>
+          <p>Cliente tem prioridade sob os clientes em espera</p>
+          <h3>*Flexa Home</h3>
+          <p>Corte ao domicílio até um raio de 70km</p>
+        </footer>
       </div>
     </main>
   );

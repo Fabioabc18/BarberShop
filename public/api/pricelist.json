@@ -2,7 +2,8 @@
   {
     "services_id": 1,
     "service": "Corte de Cabelo",
-    "icon": "/images.PL-clipper.png",
+    "icon": "./images/004-barber-1.png",
+    "alt": "Imagem de uma barbeiro",
     "cutz": [
       { "cut_id": 1, "name": " Simples", "price": 8 },
 
@@ -25,7 +26,8 @@
   {
     "services_id": 2,
     "service": "Barba",
-    "icon": "/images.PL-barba.png",
+    "icon": "./images/005-hairstyle.png",
+    "alt": "Imagem de uma barba",
     "cutz": [
       { "cut_id": 9, "name": " Simples", "price": 5 },
 
@@ -37,18 +39,21 @@
 
   {
     "services_id": 12,
-    "service": "Kidz",
-    "icon": "/images.PL-barba.png",
+    "service": "Kid's",
+    "icon": "./images/003-little-kid.png",
+    "alt": "Imagem de uma criança",
     "cutz": [{ "cut_id": 13, "name": " Corte", "price": 7.5 }]
   },
 
   {
     "services_id": 14,
     "service": "Flexa Premium",
+    "icon": "./images/002-barber.png",
+    "alt": "Imagem de uma barbearia",
     "cutz": [
-      { "cut_id": 15, "name": " Flexa Expresso", "price": 45 },
+      { "cut_id": 15, "name": " Flexa Expresso*", "price": 45 },
 
-      { "cut_id": 16, "name": " Flexa Home", "price": 70 }
+      { "cut_id": 16, "name": " Flexa Home*", "price": 70 }
     ]
   }
 ]

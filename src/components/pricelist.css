@@ -1,0 +1,61 @@
+h1 {
+  font-size: 50px;
+  margin-top: 0;
+  text-align: center;
+}
+
+h1 img {
+  align-items: center;
+}
+
+h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.pricelist {
+  width: 70%;
+  background-color: rgba(227, 156, 112, 0.87);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  color: aliceblue;
+}
+
+.icons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  border-color: black;
+}
+
+.cutz {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 19px;
+}
+
+.service {
+  width: 60%;
+  text-align: left;
+  color: blue;
+}
+
+.price {
+  width: 30%;
+  text-align: right;
+  color: red;
+}
+
+h3,
+p {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+}
