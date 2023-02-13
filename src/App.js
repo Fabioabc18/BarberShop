@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
 import Pricelist from "./components/Pricelist";
@@ -12,12 +12,15 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Home />
-      <Pricelist />
-      <Gallery />
-      <Scheduling />
-      <Location />
-      <About />
+
+      <Routes>
+        <Route index path="/" element={<Home />} />
+        <Route path="/pricelist" element={<Pricelist />} />
+        <Route path="/location" element={<Location />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/scheduling" element={<Scheduling />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </BrowserRouter>
   );
 }
