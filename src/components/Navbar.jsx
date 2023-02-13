@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { links } from "../navBarData";
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = props => {
   const [show, setShow] = useState(false);
 
   return (
