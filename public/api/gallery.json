@@ -13,7 +13,7 @@
 
   { "image_id": 7, "url": "./images/c7.jpg" },
 
-  { "image_id": 8, "url": "./images/c8.jpg" },
+  { "image_id": 8, "url": "./images/c23.jpg" },
 
   { "image_id": 9, "url": "./images/c9.jpg" },
 
@@ -23,27 +23,19 @@
 
   { "image_id": 12, "url": "./images/c12.jpg" },
 
-  { "image_id": 13, "url": "./images/c13.jpg" },
+  { "image_id": 13, "url": "./images/c14.jpg" },
 
-  { "image_id": 14, "url": "./images/c14.jpg" },
+  { "image_id": 14, "url": "./images/c15.jpg" },
 
-  { "image_id": 15, "url": "./images/c15.jpg" },
+  { "image_id": 15, "url": "./images/c16.jpg" },
 
-  { "image_id": 16, "url": "./images/c16.jpg" },
+  { "image_id": 16, "url": "./images/c17.jpg" },
 
-  { "image_id": 17, "url": "./images/c17.jpg" },
+  { "image_id": 17, "url": "./images/c18.jpg" },
 
-  { "image_id": 18, "url": "./images/c18.jpg" },
+  { "image_id": 18, "url": "./images/c19.jpg" },
 
-  { "image_id": 19, "url": "./images/c19.jpg" },
+  { "image_id": 19, "url": "./images/c21.jpg" },
 
-  { "image_id": 20, "url": "./images/20.jpg" },
-
-  { "image_id": 21, "url": "./images/21.jpg" },
-
-  { "image_id": 22, "url": "./images/c22.jpg" },
-
-  { "image_id": 23, "url": "./images/c23.jpg" },
-
-  { "image_id": 24, "url": "./images/c24.jpg" }
+  { "image_id": 20, "url": "./images/c22.jpg" }
 ]

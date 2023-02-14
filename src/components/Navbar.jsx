@@ -23,7 +23,11 @@ function Navbar() {
           <ul>
             {links.map(({ icon, path, id, name }) => (
               <li key={id}>
-                <NavLink className="nav-path" to={path}>
+                <NavLink
+                  className="nav-path"
+                  to={path}
+                  activeClassName="active"
+                >
                   <i className="nav-icon">{icon}</i>
                   <span>{name}</span>
                 </NavLink>

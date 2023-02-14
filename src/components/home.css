@@ -22,3 +22,16 @@
 h1 {
   margin-bottom: 3rem;
 }
+
+@media only screen and (min-width: 768px) {
+  .welcome-video {
+    width: 30%;
+    margin-left: 9%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .welcome-video {
+    width: 80%;
+  }
+}

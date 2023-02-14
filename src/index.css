@@ -22,9 +22,3 @@ ul {
   padding: 0;
   box-sizing: border-box;
 }
-
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}

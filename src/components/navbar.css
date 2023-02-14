@@ -16,8 +16,8 @@ main {
   left: 0;
   height: var(--header-height);
   width: 100%;
-  position: fixed;
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(156, 96, 62, 0.663);
@@ -25,11 +25,18 @@ main {
   transition: 0.5s;
 }
 
-.header-toggle {
-  width: 100%;
+.title h1 {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+  color: azure;
+}
+
+.title p {
+  color: azure;
+}
+
+.header-toggle {
+  width: 10%;
   font-size: 1.25rem;
   cursor: pointer;
   color: rgb(236, 88, 9);
@@ -71,15 +78,15 @@ main {
   margin-bottom: 1.5rem;
 }
 
-.nav-path:hover,
-.nav-icon:hover {
-  color: rgb(236, 175, 9);
-  background-color: rgba(0, 0, 0, 0.2);
+.nav-path:hover .nav-icon,
+.nav-path:hover span {
+  color: rgb(236, 138, 9);
+  transform: scale(1.2);
 }
 
-.active {
+.nav-path.active .nav-icon,
+.nav-path.active span {
   color: rgb(236, 175, 9);
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .active::before {
@@ -89,7 +96,7 @@ main {
   width: 0.18rem;
   position: absolute;
   content: "";
-  background-color: rgb(236, 88, 9);
+  background-color: rgb(236, 175, 9);
   transition: 0.5s;
 }
 
