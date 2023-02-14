@@ -4,7 +4,7 @@ import "./home.css";
 function Home() {
   return (
     <div className="container">
-      <video className="welcome-video" controls autoplay>
+      <video className="welcome-video" controls autoPlay>
         <source src="/videos/c4.mp4" type="video/mp4" />
       </video>
 

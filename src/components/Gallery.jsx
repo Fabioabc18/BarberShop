@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function Gallery(props) {
+function Gallery() {
   const [images, setImages] = useState([]);
 
   useEffect(() => {

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { links } from "../navBarData";
 import "./navbar.css";
 
-const Navbar = props => {
+function Navbar() {
   const [show, setShow] = useState(false);
 
   return (
@@ -44,6 +44,6 @@ const Navbar = props => {
       </aside>
     </main>
   );
-};
+}
 
 export default Navbar;
