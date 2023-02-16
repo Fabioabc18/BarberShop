@@ -1,0 +1,59 @@
+{
+  "famous": [
+    {
+      "famous_id": 1,
+      "url": "./images/f1.jpg",
+      "name": "Bruno Coelho",
+      "description": "Capitão do Benfica futsal, campeão europeu e mundial pela seleção nacional."
+    },
+
+    {
+      "famous_id": 2,
+      "url": "./images/f2.jpg",
+      "name": "Pelé",
+      "description": "Jogador do Mónaco. Internacional pela Guiné-Bissau, atualmente emprestado ao Familcão, formado no Belenenses"
+    },
+
+    {
+      "famous_id": 3,
+      "url": "./images/f3.jpg",
+      "name": "Arthur",
+      "description": "Jogador do Benfica Futsal e vencedor da UEFA Futsal Champions League "
+    },
+
+    {
+      "famous_id": 4,
+      "url": "./images/f4.jpg",
+      "name": "Nanu",
+      "description": "Jogador do FC Porto, atualmente emprestado ao Santa Clara"
+    },
+
+    {
+      "famous_id": 5,
+      "url": "./images/f5.jpg",
+      "name": "Francis Obikwelu",
+      "description": "Dispensa apresentações.... Nosso orgulho olímpico, medalha de prata em 2004, medalha de ouro em campeonatos europeus(2002,2006), com um vasto palmarés"
+    },
+
+    {
+      "famous_id": 6,
+      "url": "./images/f6.jpg",
+      "name": "Derick Souza",
+      "description": "Atleta Olímpico brasileiro, Tokyo 2021"
+    },
+
+    {
+      "famous_id": 7,
+      "url": "./images/f7.jpg",
+      "name": "Romário Baldé",
+      "description": "Jogador formado no Benfica, atualmente joga na Tailândia a representar o Ratchaburi"
+    },
+
+    {
+      "famous_id": 8,
+      "url": "./images/f8.jpg",
+      "name": "Abel Camará",
+      "description": "Ex-jogador do Beleneses SAD, atualmente a jogar na Indonésia a representar o Arema F.C"
+    }
+  ]
+}

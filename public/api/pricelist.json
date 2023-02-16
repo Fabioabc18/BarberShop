@@ -3,7 +3,7 @@
     "services_id": 1,
     "service": "Corte de Cabelo",
     "icon": "./images/004-barber-1.png",
-    "alt": "Imagem de uma barbeiro",
+    "alt": "Imagem de um barbeiro",
     "cutz": [
       { "cut_id": 1, "name": " Simples", "price": 8 },
 

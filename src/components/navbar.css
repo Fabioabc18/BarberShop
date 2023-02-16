@@ -27,12 +27,15 @@ main {
 
 .title h1 {
   display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
 
-  color: azure;
+  color: rgba(236, 88, 9, 0.692);
 }
 
-.title p {
-  color: azure;
+.title h2 {
+  font-size: 15px;
+  color: rgba(10, 10, 10, 0.808);
 }
 
 .header-toggle {
@@ -72,9 +75,9 @@ main {
   display: grid;
   position: relative;
   grid-template-columns: max-content max-content;
-  column-gap: 2rem;
-  padding: 3rem 0 1rem 1.5rem;
-  transition: 0.3s;
+  column-gap: 2.5rem;
+  padding: 2rem 0 1rem 1.5rem;
+  transition: 0.6s;
   margin-bottom: 1.5rem;
 }
 

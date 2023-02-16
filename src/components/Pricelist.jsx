@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./pricelist.css";
 
-function Pricelist(props) {
+function Pricelist() {
   const [cutz, setCutz] = useState([]);
 
   useEffect(() => {
@@ -9,6 +10,7 @@ function Pricelist(props) {
       .then(response => response.json())
       .then(data => setCutz(data));
   }, []);
+  console.log(cutz);
 
   return (
     <main className="pricelist">
@@ -36,9 +38,12 @@ function Pricelist(props) {
         ))}
         <footer>
           <h3>*Flexa Expresso</h3>
-          <p>Cliente tem prioridade sob os clientes em espera</p>
+          <p>Cliente tem prioridade sob os que estão em espera</p>
           <h3>*Flexa Home</h3>
           <p>Corte ao domicílio até um raio de 70km</p>
+          <NavLink className="scheduling" to={"/scheduling"}>
+            Agende aqui
+          </NavLink>
         </footer>
       </div>
     </main>

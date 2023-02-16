@@ -14,7 +14,7 @@ function Navbar() {
         </div>
         <div className="title">
           <h1>Flexa Barber</h1>
-          <p>More than a barber</p>
+          <h2>More than a barber</h2>
         </div>
       </header>
 
@@ -23,11 +23,7 @@ function Navbar() {
           <ul>
             {links.map(({ icon, path, id, name }) => (
               <li key={id}>
-                <NavLink
-                  className="nav-path"
-                  to={path}
-                  activeClassName="active"
-                >
+                <NavLink className="nav-path" to={path}>
                   <i className="nav-icon">{icon}</i>
                   <span>{name}</span>
                 </NavLink>
