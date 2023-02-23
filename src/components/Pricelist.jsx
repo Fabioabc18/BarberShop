@@ -10,20 +10,16 @@ function Pricelist() {
       .then(response => response.json())
       .then(data => setCutz(data));
   }, []);
-  console.log(cutz);
 
   return (
     <main className="pricelist">
       <div>
         <h1> Flexa Barber </h1>
-        <img src="/images/001-barber-shop.png" alt="simbolo de barbearia" />
+        <img src="/images/001-barber-shop.png" alt="" />
         <hr />
         {cutz.map(service => (
           <section key={service.services_id}>
-            {" "}
-            {/* prende a a key ID */}
-            <h2 className="main_service">{service.service}</h2>{" "}
-            {/*  ira dizer nome do serviço */}
+            <h2 className="main_service">{service.service}</h2>
             <img className="icons" src={service.icon} alt={service.alt} />
             <ul className="cutz">
               {service.cutz.map(corte => (

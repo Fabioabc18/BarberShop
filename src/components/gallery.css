@@ -87,7 +87,11 @@ p {
 /* famous modal */
 
 .modal-famous {
-  background-color: red;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(211, 149, 68, 0.466);
+  z-index: -1;
 }
 
 .modal-famous-container {
@@ -107,8 +111,7 @@ p {
   width: 50%;
   margin-left: 23%;
   object-fit: cover;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-radius: 8px;
 }
 
 .text-content {

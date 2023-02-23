@@ -1,0 +1,15 @@
+.image img {
+  width: 50%;
+  object-fit: cover;
+  margin-left: 14rem;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: column;
+}
+
+form {
+  width: 100%;
+}

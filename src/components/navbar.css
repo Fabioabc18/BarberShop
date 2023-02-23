@@ -54,6 +54,7 @@ main {
   position: fixed;
   background-color: rgba(156, 96, 62, 0.663);
   transition: 0.5s;
+  z-index: 1;
 }
 
 .nav {
