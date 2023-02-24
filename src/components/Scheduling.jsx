@@ -19,6 +19,7 @@ function Scheduling() {
   }, []);
 
   const [services, setServices] = useState([]);
+  const [showAddress, setShowAddress] = useState(false);
 
   const {
     firstName,
@@ -56,10 +57,24 @@ function Scheduling() {
       selectedCut: "",
     });
   };
+
+  const handleAddressClick = () => {
+    setShowAddress(!showAddress);
+  };
+
   return (
     <div className="form-container">
-      <div className="image">
-        <img src="/images/localizacao.JPG" alt="imagem exterior da barbearia" />
+      <div className="image" onClick={handleAddressClick}>
+        <img
+          src="/images/localizacao.JPG"
+          alt="imagem exterior da barbearia"
+          title="Carrega sobre a imagem"
+        />
+        {showAddress && (
+          <p>
+            <strong>Morada:</strong> Estrada Águas Livres 19C, 2745-016 Queluz
+          </p>
+        )}
       </div>
       <div className="form-wraper">
         <form onSubmit={handleSubmit}>
@@ -143,8 +158,15 @@ function Scheduling() {
             value={comments}
             onChange={handleChange}
           />
-          <input type="submit" value="Submit" />
+          <input className="submit" type="submit" value="Submit" />
         </form>
+      </div>
+      <div className="opening-hours">
+        <h2>Horário</h2>
+        <p>
+          <strong>Segunda - Sábado:</strong> 9:00h-13h // 14h-20h
+          <strong>Domingo:</strong> Fechado
+        </p>
       </div>
     </div>
   );
