@@ -3,25 +3,25 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgba(255, 153, 0, 0.616);
+  background-color: rgba(0, 0, 0, 0.527);
 }
 
 .image {
   flex: 1;
-  padding: 20px;
+  padding-left: 70px;
   width: 100%;
 }
 
 .image img {
-  width: 100%;
-  height: auto;
+  width: 90%;
   border-radius: 8px;
   cursor: pointer;
 }
 
 .form-wraper {
   flex: 1;
-  padding: 20px;
+  padding: 15px;
+  background-color: rgba(106, 63, 41, 0.74);
 }
 
 form {
@@ -39,31 +39,56 @@ option {
   border: none;
 }
 
+label {
+  color: rgb(250, 250, 250);
+}
+
+.opening-hours {
+  margin: 50px;
+  padding-bottom: 200px;
+  background-color: rgba(106, 63, 41, 0.74);
+}
+
+.form-container h2 {
+  font-size: 30px;
+  color: rgb(240, 255, 255);
+}
+
+.form-container p {
+  font-size: 18px;
+  color: rgb(240, 255, 255);
+  line-height: 1.5;
+}
+
+.adress {
+  background-color: rgba(106, 63, 41, 0.74);
+  border-radius: 8px;
+}
+
+a {
+  color: rgb(240, 255, 255);
+}
+
+a:hover {
+  color: rgb(139, 131, 247);
+}
+
 .submit {
-  background-color: #8c928d;
-  color: white;
+  background-color: rgb(140, 146, 141);
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
 .submit:hover {
   background: transparent;
-  border: 2px solid #e6a579;
-  box-shadow: 0 0 10px 0 #e6a579 inset, 0 0 10px 4px #e6a579;
+  border: 2px solid rgb(230, 165, 121);
+  box-shadow: 0 0 10px 0 rgb(230, 165, 121) inset,
+    0 0 10px 4px rgb(230, 165, 121);
 }
 
 .opening-hours {
   text-align: center;
   margin-top: 50px;
-}
-
-.opening-hours h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.opening-hours p {
-  font-size: 18px;
-  margin-bottom: 5px;
 }
 
 .opening-hours p strong {

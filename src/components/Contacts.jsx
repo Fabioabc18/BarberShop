@@ -70,9 +70,17 @@ function Contacts() {
           alt="imagem exterior da barbearia"
           title="Carrega sobre a imagem"
         />
+
         {showAddress && (
-          <p>
-            <strong>Morada:</strong> Estrada Águas Livres 19C, 2745-016 Queluz
+          <p className="adress">
+            <strong>Morada:</strong>
+            <a
+              href="https://www.google.com/maps/place/Estrada+das+%C3%81guas+Livres/@38.7656732,-9.2515339,3a,86.3y,280.15h,83.51t/data=!3m6!1e1!3m4!1sWTYSi9bVgUhnhFCrCY67qw!2e0!7i16384!8i8192!4m6!3m5!1s0xd1ecd4f5804cd8f:0xa21df2e95bcdcafe!8m2!3d38.7656656!4d-9.2516695!16s%2Fg%2F11k0l_tysg?hl=pt-PT"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Estrada Águas Livres 19C, 2745-016 Queluz
+            </a>
           </p>
         )}
       </div>
