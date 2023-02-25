@@ -23,7 +23,7 @@ export const links = [
   {
     id: 4,
     name: "Contactos",
-    path: "/scheduling",
+    path: "/contacts",
     icon: <i className="fa-solid fa-calendar-check"></i>,
   },
 

@@ -4,7 +4,7 @@ import "./App.css";
 import Home from "./components/Home";
 import Pricelist from "./components/Pricelist";
 import Gallery from "./components/Gallery";
-import Scheduling from "./components/Scheduling";
+import Contacts from "./components/Contacts";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 
@@ -17,7 +17,7 @@ function App() {
         <Route index path="/" element={<Home />} />
         <Route path="/pricelist" element={<Pricelist />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/scheduling" element={<Scheduling />} />
+        <Route path="/contacts" element={<Contacts />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>

@@ -37,7 +37,7 @@ function Pricelist() {
           <p>Cliente tem prioridade sob os que estão em espera</p>
           <h3>*Flexa Home</h3>
           <p>Corte ao domicílio até um raio de 70km</p>
-          <NavLink className="scheduling" to={"/scheduling"}>
+          <NavLink className="contacts" to={"/contacts"}>
             Agende aqui
           </NavLink>
         </footer>
