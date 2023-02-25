@@ -5,7 +5,6 @@ import Home from "./components/Home";
 import Pricelist from "./components/Pricelist";
 import Gallery from "./components/Gallery";
 import Scheduling from "./components/Scheduling";
-import Location from "./components/Location";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
 
@@ -17,7 +16,6 @@ function App() {
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/pricelist" element={<Pricelist />} />
-        <Route path="/location" element={<Location />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/scheduling" element={<Scheduling />} />
         <Route path="/about" element={<About />} />

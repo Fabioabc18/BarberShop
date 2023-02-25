@@ -15,16 +15,16 @@ export const links = [
 
   {
     id: 3,
-    name: "Localização",
-    path: "/location",
-    icon: <i className="fa-solid fa-location-dot"></i>,
+    name: "Galeria",
+    path: "/gallery",
+    icon: <i className="fa-sharp fa-solid fa-images"></i>,
   },
 
   {
     id: 4,
-    name: "Galeria",
-    path: "/gallery",
-    icon: <i className="fa-sharp fa-solid fa-images"></i>,
+    name: "Contactos",
+    path: "/scheduling",
+    icon: <i className="fa-solid fa-calendar-check"></i>,
   },
 
   {
@@ -32,12 +32,5 @@ export const links = [
     name: "Sobre Mim",
     path: "/about",
     icon: <i className="fa-solid fa-circle-question"></i>,
-  },
-
-  {
-    id: 6,
-    name: "Agendamento",
-    path: "/scheduling",
-    icon: <i className="fa-solid fa-calendar-check"></i>,
   },
 ];
