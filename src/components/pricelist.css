@@ -14,8 +14,8 @@ h2 {
 }
 
 .pricelist {
-  width: 70%;
-  background-color: rgba(227, 156, 112, 0.87);
+  width: 50%;
+  background-color: rgba(240, 120, 45, 0.781);
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -35,22 +35,23 @@ hr {
 }
 
 .cutz {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 19px;
 }
 
 .service {
-  width: 60%;
+  /*   width: 60%;
   text-align: left;
+  float: left; */
+
   color: blue;
 }
 
 .price {
-  width: 30%;
-  text-align: right;
   color: red;
 }
 
@@ -58,4 +59,10 @@ h3,
 p {
   font-family: "Times New Roman", Times, serif;
   color: black;
+}
+
+.contacts {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

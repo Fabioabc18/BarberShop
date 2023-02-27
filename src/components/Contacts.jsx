@@ -45,8 +45,7 @@ function Contacts() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(formData);
-    alert("Recebemos a informação, entraremos em contato");
+    alert("Recebemos a informação, entraremos em contato logo que possível!");
     setFormData({
       firstName: "",
       lastName: "",
@@ -93,6 +92,8 @@ function Contacts() {
             aria-label="Primeiro Nome"
             value={firstName}
             onChange={handleChange}
+            pattern="[a-zA-Z]+"
+            title="Insira o nome correto"
             required
           />
           <input
@@ -102,6 +103,8 @@ function Contacts() {
             aria-label="Último Nome"
             value={lastName}
             onChange={handleChange}
+            pattern="[a-zA-Z]+"
+            title="Insira o nome correto"
             required
           />
           <input
@@ -111,6 +114,8 @@ function Contacts() {
             aria-label="Nº Telemóvel"
             value={phoneNumber}
             onChange={handleChange}
+            pattern="[0-9]{9}"
+            title="Insira um contacto válido"
             required
           />
           <input
@@ -120,6 +125,8 @@ function Contacts() {
             aria-label="Email"
             value={email}
             onChange={handleChange}
+            pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            title="Insira um email válido"
             required
           />
           <label htmlFor="service">Serviço:</label>
