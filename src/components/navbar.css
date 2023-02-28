@@ -23,6 +23,7 @@ main {
   background-color: rgba(156, 96, 62, 0.663);
   padding: 0 1rem;
   transition: 0.5s;
+  z-index: 1;
 }
 
 .title {
@@ -30,12 +31,15 @@ main {
   align-items: center;
 }
 .title h1 {
+  font-size: 3rem;
+  margin-right: 2rem;
   margin-top: 60px;
-  color: rgb(236, 88, 9);
+  color: rgb(46, 23, 8);
 }
 
 .title h2 {
-  font-size: 15px;
+  font-size: 1rem;
+  margin-top: 50px;
   color: rgba(12, 12, 12, 0.993);
 }
 
@@ -43,11 +47,11 @@ main {
   width: 10%;
   font-size: 1.25rem;
   cursor: pointer;
-  color: rgb(236, 88, 9);
+  color: rgb(46, 23, 8);
 }
 
 .navbar {
-  top: 2;
+  top: 1;
   left: -30%;
   height: 100vh;
   width: var(--nav-width);
@@ -85,7 +89,7 @@ main {
 
 .nav-path:hover .nav-icon,
 .nav-path:hover span {
-  color: rgb(236, 138, 9);
+  color: rgb(245, 242, 240);
   transform: scale(1.2);
 }
 
@@ -113,27 +117,61 @@ main {
   padding-left: calc(var(--nav-width) + 1rem);
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   main {
-    margin: calc(var(--header-height) + 1rem) 0 0 0;
-    padding: 0 1rem 0 calc(var(--nav-width) + 2rem);
+    margin-top: calc(3rem + 1rem);
+    padding-left: calc(4.25rem + 2rem);
   }
 
   .header {
-    height: calc(var(--header-height) + 1rem);
-    padding-left: calc(var(--nav-width) + 2rem);
+    height: calc(3rem + 1rem);
+    padding-left: calc(4.25rem + 2rem);
   }
 
   .navbar {
     left: 0;
-    padding: 1rem 0 0 0;
+    padding-top: 1rem;
   }
 
   .show {
-    width: calc(var(--header-height) + 9.75rem);
+    width: calc(3rem + 9.75rem);
   }
 
   .hamburguer {
-    padding-left: calc(var(--nav-width) + 11.75rem);
+    padding-left: calc(4.25rem + 11.75rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding-left: 2rem;
+  }
+
+  .title h1 {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+  }
+  .title h2 {
+    font-size: 0.9rem;
+    margin-top: 2rem;
+  }
+
+  .navbar {
+    left: 0;
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 412px) {
+  .navbar {
+    left: 0;
+    padding-top: 1rem;
+  }
+  .hamburguer {
+    display: none;
+  }
+  .header-toggle {
+    display: none;
   }
 }

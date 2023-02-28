@@ -50,3 +50,58 @@
   line-height: 1.5;
   margin-bottom: 20px;
 }
+
+@media (max-width: 1024px) {
+  .modal-content {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .modal-image {
+    width: 100%;
+  }
+
+  .text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    margin-top: 0;
+    width: 80%;
+    margin-left: 18%;
+  }
+
+  .modal-image {
+    width: 100%;
+  }
+
+  .text h1 {
+    font-size: 24px;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 380px) {
+  .modal-content {
+    margin-top: 100px;
+    width: 80%;
+    margin-left: 18%;
+  }
+
+  .modal-image {
+    width: 100%;
+  }
+
+  .text h1 {
+    font-size: 24px;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+}

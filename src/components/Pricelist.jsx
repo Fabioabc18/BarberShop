@@ -13,8 +13,7 @@ function Pricelist() {
 
   return (
     <main className="pricelist">
-      <div>
-        <h1> Flexa Barber </h1>
+      <div className="header-price">
         <img src="/images/001-barber-shop.png" alt="" />
         <hr />
         {cutz.map(service => (
@@ -23,7 +22,7 @@ function Pricelist() {
             <img className="icons" src={service.icon} alt={service.alt} />
             <ul className="cutz">
               {service.cutz.map(corte => (
-                <div key={corte.cut_id}>
+                <div className="teste" key={corte.cut_id}>
                   <li className="service"> {corte.name} </li>
                   <li className="price"> {corte.price}€</li>
                 </div>
@@ -32,7 +31,7 @@ function Pricelist() {
             <hr />
           </section>
         ))}
-        <footer>
+        <footer className="footer">
           <h3>*Flexa Expresso</h3>
           <p>Cliente tem prioridade sob os que estão em espera</p>
           <h3>*Flexa Home</h3>

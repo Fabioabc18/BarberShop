@@ -92,7 +92,8 @@ function Contacts() {
             aria-label="Primeiro Nome"
             value={firstName}
             onChange={handleChange}
-            pattern="[a-zA-Z]+"
+            pattern="^[a-zA-ZÀ-ÿ\s'-]+$"
+            maxLength="15"
             title="Insira o nome correto"
             required
           />
@@ -103,7 +104,8 @@ function Contacts() {
             aria-label="Último Nome"
             value={lastName}
             onChange={handleChange}
-            pattern="[a-zA-Z]+"
+            pattern="^[a-zA-ZÀ-ÿ\s'-]+$"
+            maxLength="15"
             title="Insira o nome correto"
             required
           />
@@ -115,6 +117,7 @@ function Contacts() {
             value={phoneNumber}
             onChange={handleChange}
             pattern="[0-9]{9}"
+            maxLength="9"
             title="Insira um contacto válido"
             required
           />
@@ -179,9 +182,13 @@ function Contacts() {
       <div className="opening-hours">
         <h2>Horário</h2>
         <p>
-          <strong>Segunda - Sábado:</strong> 9:00h-13h // 14h-20h
-          <strong>Domingo:</strong> Fechado
+          <strong>Segunda - Sábado:</strong>
         </p>
+        <p> 9:00h-13h // 14h-20h</p>
+        <p>
+          <strong>Domingo:</strong>
+        </p>
+        <p> Fechado</p>
       </div>
     </div>
   );

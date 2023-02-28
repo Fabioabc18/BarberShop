@@ -1,37 +1,84 @@
 .container {
+  margin: auto;
   display: flex;
-  justify-content: center;
-  text-align: center;
-  height: 50%;
-  background-color: rgba(0, 0, 0, 0.6);
+  max-width: 1200px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.699);
+  transform: translate(0%, 20%);
 }
 
 .welcome-video {
   width: 30%;
-  margin-left: 9%;
 }
 
 .welcome-text {
-  width: 50%;
+  width: 100%;
   align-items: center;
   text-align: center;
   margin-top: 3rem;
   color: rgb(240, 255, 255);
+  max-width: 800px;
 }
 
-h1 {
+.welcome-text p {
+  color: rgb(240, 248, 255);
+  font-size: 1.12rem;
+  line-height: 1.5;
+  text-align: justify;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.welcome-text h1 {
   margin-bottom: 3rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+
   .welcome-video {
     width: 30%;
-    margin-left: 9%;
+    margin-right: 5%;
+  }
+
+  .welcome-text {
+    width: 65%;
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .welcome-text h1 {
+    font-size: 4rem;
+  }
+
+  .welcome-text p {
+    font-size: 1.2rem;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 70%;
+    transform: translate(10%, 2%);
+  }
+
   .welcome-video {
-    width: 80%;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .welcome-text {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .welcome-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .welcome-text p {
+    font-size: 1rem;
   }
 }

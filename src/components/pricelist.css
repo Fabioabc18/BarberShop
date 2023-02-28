@@ -1,68 +1,111 @@
-h1 {
-  font-size: 50px;
-  margin-top: 0;
+.header-price h2 {
+  font-size: 2rem;
   text-align: center;
+  color: rgb(165, 42, 42);
 }
 
-h1 img {
-  align-items: center;
-}
-
-h2 {
-  font-size: 35px;
-  text-align: center;
+.header-price img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
 }
 
 .pricelist {
   width: 50%;
-  background-color: rgba(240, 120, 45, 0.781);
+  background-color: rgba(8, 8, 8, 0.904);
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
-  color: aliceblue;
+  color: rgb(183, 201, 82);
+}
+
+.teste {
+  display: grid;
+  place-items: center;
 }
 
 .icons {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  background-color: aliceblue;
 }
 
 hr {
   height: 2px;
   background-color: rgb(255, 255, 255);
-  border-color: black;
+  border-color: rgb(224, 38, 38);
 }
 
 .cutz {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 19px;
 }
 
 .service {
-  /*   width: 60%;
-  text-align: left;
-  float: left; */
-
-  color: blue;
+  font-size: 1.25rem;
+  color: rgb(0, 0, 255);
 }
 
 .price {
-  color: red;
+  font-size: 1.25rem;
+  color: rgb(255, 0, 0);
 }
 
-h3,
-p {
+.footer h3,
+.footer p {
   font-family: "Times New Roman", Times, serif;
-  color: black;
+  color: rgb(252, 248, 248);
 }
 
-.contacts {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.footer .contacts {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .header-price h2 {
+    font-size: 1.5rem;
+  }
+
+  .pricelist {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .cutz {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    font-size: 1rem;
+  }
+
+  .service,
+  .price {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .header-price h2 {
+    font-size: 1.4rem;
+  }
+
+  .pricelist {
+    width: 70%;
+    margin-right: 10%;
+  }
+
+  .cutz {
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+  }
+
+  .service,
+  .price {
+    font-size: 1.2rem;
+  }
 }

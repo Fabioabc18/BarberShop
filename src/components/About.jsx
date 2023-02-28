@@ -35,18 +35,12 @@ function About() {
         <div className="text">
           <h1> Como cheguei aqui</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
-            nisi doloribus nesciunt distinctio dignissimos? Quasi, natus nihil
-            pariatur reiciendis hic nisi alias dolor, quos expedita esse quia?
-            Fuga cum ipsum corporis nulla tempore! Perspiciatis sapiente
-            excepturi iure cumque maxime incidunt quisquam aliquam possimus, ad
-            quasi, facere numquam! Quod, praesentium nemo repellendus molestias
-            accusantium fugit assumenda beatae quas, libero, possimus rem.
-            Dolores recusandae obcaecati blanditiis quas corrupti, enim libero
-            deserunt impedit officia laborum vel veniam dolorem consequuntur.
-            Quod sit voluptates repellendus labore cupiditate debitis dolores
-            doloribus ab fugiat neque asperiores, similique, aperiam quasi
-            minima eos itaque deserunt sapiente velit beatae? Maiores!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, aliquam? Dolor qui accusamus incidunt odit, ullam
+            blanditiis magni amet sed rem earum saepe libero temporibus eligendi
+            facilis dicta ex nulla quo culpa voluptates sequi consequatur
+            accusantium ipsum. Magnam, aspernatur voluptatem. Veritatis fugit
+            iure provident cum nihil nemo quidem dolore modi!
           </p>
         </div>
       </div>

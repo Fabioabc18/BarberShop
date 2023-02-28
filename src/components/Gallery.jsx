@@ -112,7 +112,7 @@ function Gallery() {
                   X
                 </button>
               </span>
-              <img /* novo state + nova classe - confirmar */
+              <img
                 className="modal-famous-img"
                 src={image[selectedFamous].url}
                 alt={image[selectedFamous].name}
@@ -137,8 +137,6 @@ function Gallery() {
                 </div>
               </div>
               <div className="text-content">
-                {" "}
-                {/* vai trocando consoante a foto que user selecione */}
                 <h3>{image[selectedFamous].name}</h3>
                 <p>{image[selectedFamous].description}.</p>
               </div>
@@ -149,10 +147,10 @@ function Gallery() {
       {clientModal && (
         <div className="modal-client">
           <div className="modal-client-container">
+            <button className="close-btn-client" onClick={closeModal}>
+              X
+            </button>
             <div className="modal-client-content">
-              <button className="close-btn-client" onClick={closeModal}>
-                X
-              </button>
               <div className="modal-client-img-container">
                 <button className="prev-btn" onClick={prevImage}>
                   &#8249;
